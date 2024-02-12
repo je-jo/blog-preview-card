@@ -6,8 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="A solution to a Frontend Mentor challenge - Blog Preview Card">
   <meta name="theme-color" content="hsl(216, 55%, 11%)">
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  <link rel="stylesheet" href="./assets/styles/main.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="assets/styles/main.css">
   <title>Frontend Mentor | Blog preview card</title>
 </head>
 
@@ -18,13 +18,19 @@
 
   <main> 
     <div class="card">
-      <img src="/assets/images/illustration-article.svg" alt="">
-      
-      Learning
-      Published 21 Dec 2023
-      <H2>HTML & CSS foundations</H2>
-      <P>These languages are the backbone of every website, defining structure, content, and presentation.</P>
-      <img src="/assets/images/image-avatar.webp" alt=""><p>Greg Hooper</p>
+      <div class="card-header">
+        <img src="assets/images/illustration-article.svg" alt=" ">
+        <p class="card-header-tag">Learning</p>
+        <p>Published 21 Dec 2023</p>
+      </div>
+      <div class="card-body">
+        <h2>HTML & CSS foundations</h2>
+        <p>These languages are the backbone of every website, defining structure, content, and presentation.</p>
+      </div>
+      <div class="card-footer">
+        <img src="assets/images/image-avatar.webp" alt="avatar of greg hooper">
+        <p>Greg Hooper</p>
+      </div>
     </div>
   </main>
 
