@@ -1,16 +1,9 @@
 /*
 01 reset
 02 fonts
-03 theme
-03 page layout
-04 utilities
-05 main wrappers
-06 typography
-07 navigation
-08 links
-09 main content elements
-10 cards
-11 footer elements
+03 utilities
+04 theme
+05 layout
 */
 
 /* 01 reset */
@@ -162,7 +155,7 @@ select {
     --clr-black: hsl(0, 0%, 7%);
 }
 
-/* 04 layout */
+/* 05 layout */
 
 body {
     display: grid;
@@ -172,38 +165,95 @@ body {
     color: var(--clr-black);
 }
 
-/* main {
+main {
     display: grid;
-    place-items: center;
-} */
+    align-items: center;
+} 
 
-ul {
+ul.card-wrapper {
+    /* flexible card container */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr) );
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
+    margin-top: 4.5rem;
     padding: 1.5rem;
 }
 
 .card {
     display: grid;
-    padding: 1.5rem;
+    justify-items: start;
+    max-width: 20.5rem;
+    padding: 1.5rem 1.5rem 1rem;
     background-color: var(--clr-white);
-    max-width: 60ch;
-    border-radius: 1.5rem;
+    border-radius: 1.25rem;
     border: 1px solid var(--clr-black);
     box-shadow: 7px 8px 0px 2px var(--clr-black);
+}
+
+.card-wrapper-image {
+    min-height: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.card-image {
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-wrapper-author {
+    display: flex;
+    align-items: center;
+    gap: 0.875rem;
+}
+
+.card-wrapper-author img {
+    height: 2rem;
+}
+
+/* typography */
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    font-size: 0.875rem;
+}
+
+p.card-tag {
+    display: inline;
+    font-size: 0.75rem;
+    font-weight: 800;
+    margin-top: 1.5rem;
+    padding: 0.3rem 0.75rem;
+    background-color: var(--clr-yellow);
+    border-radius: 5px;
+}
+
+p.card-date {
+    font-size: 0.75rem;
+    margin-top: 0;
+}
+
+p.card-text {
+    max-width: 33ch;
+    color: var(--clr-grey);
+}
+
+p.card-author {
+    font-weight: 800;
 }
 
 footer {
     text-align: center;
 }
 
-* {
+/* * {
     outline: 1px solid salmon;
-}
+} */
 
-/* 05 typography */
 
 
 
