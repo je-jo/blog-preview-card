@@ -51,7 +51,8 @@ I used this small project to get back on track after a long pause.
 ### Useful resources
 
 - [google web fonts helper](https://gwfh.mranftl.com/fonts) - A Hassle-Free Way to Self-Host Google Fonts.
-- [PerfectPixel](https://www.welldonecode.com/perfectpixel/) a Chrome extension for comparing website with design image.
+- [Box Shadows](https://box-shadow.dev/) - a simple tool to generate box shadows.
+- [PerfectPixel](https://www.welldonecode.com/perfectpixel/) - a Chrome extension for comparing website with design image.
 
 ## Author
 
