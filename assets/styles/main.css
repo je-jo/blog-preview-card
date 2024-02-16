@@ -4,6 +4,7 @@
 03 utilities
 04 theme
 05 layout
+06 typography
 */
 
 /* 01 reset */
@@ -153,6 +154,7 @@ select {
     --clr-white: hsl(0, 0%, 100%);
     --clr-grey: hsl(0, 0%, 50%);
     --clr-black: hsl(0, 0%, 7%);
+    --col-width: clamp(15rem, 16.667vw + 11.667rem, 25rem);
 }
 
 /* 05 layout */
@@ -173,22 +175,22 @@ main {
 ul.card-wrapper {
     /* flexible card container */
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(var(--col-width), 1fr));
     grid-gap: 1.5rem;
     justify-items: center;
-    margin-top: 4.5rem;
+    margin-top: 4rem;
+    margin-top: clamp(4rem, 0.833vw + 3.833rem, 4.5rem);
     padding: 1.5rem;
 }
 
 .card {
     display: grid;
     justify-items: start;
-    max-width: 20.5rem;
     padding: 1.5rem 1.5rem 1rem;
     background-color: var(--clr-white);
     border-radius: 1.25rem;
     border: 1px solid var(--clr-black);
-    box-shadow: 7px 8px 0px 2px var(--clr-black);
+    box-shadow: 10px 10px 0px -2px var(--clr-black);
 }
 
 .card-wrapper-image {
@@ -212,21 +214,30 @@ ul.card-wrapper {
     height: 2rem;
 }
 
-/* typography */
+footer {
+    text-align: center;
+}
+
+/* 06 typography */
 
 h2 {
     font-size: 1.25rem;
+    font-size: clamp(1.25rem, 0.417vw + 1.167rem, 1.5rem);
 }
 
 p {
     font-size: 0.875rem;
+    font-size: clamp(0.875rem, 0.208vw + 0.833rem, 1rem);
+    margin-top: 0.875rem;
 }
 
 p.card-tag {
     display: inline;
     font-size: 0.75rem;
+    font-size: clamp(0.75rem, 0.208vw + 0.708rem, 0.875rem);
     font-weight: 800;
     margin-top: 1.5rem;
+    margin-bottom: -0.25rem;
     padding: 0.3rem 0.75rem;
     background-color: var(--clr-yellow);
     border-radius: 5px;
@@ -234,7 +245,7 @@ p.card-tag {
 
 p.card-date {
     font-size: 0.75rem;
-    margin-top: 0;
+    font-size: clamp(0.75rem, 0.208vw + 0.708rem, 0.875rem);
 }
 
 p.card-text {
@@ -243,29 +254,20 @@ p.card-text {
 }
 
 p.card-author {
+    font-size: 0.875rem;
     font-weight: 800;
 }
 
-footer {
-    text-align: center;
+a {
+    color: var(--clr-black);
+    text-decoration: none;
 }
 
-/* * {
-    outline: 1px solid salmon;
-} */
+a:hover {
+    color: var(--clr-white);
+    transition: all 0.2s;
+}
 
-
-
-
-
-
-
-
-/* # Front-end Style Guide
-
-## Layout
-
-The designs were created to the following widths:
-
-- Mobile: 375px
-- Desktop: 1440px
+.card a:hover {
+    color: var(--clr-yellow);
+}

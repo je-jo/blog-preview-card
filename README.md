@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![](./screenshot.png)
 
 
 ### Links
@@ -52,6 +52,8 @@ I used this small project to get back on track after a long pause.
 
 - [google web fonts helper](https://gwfh.mranftl.com/fonts) - A Hassle-Free Way to Self-Host Google Fonts.
 - [Box Shadows](https://box-shadow.dev/) - a simple tool to generate box shadows.
+- [Fluid Typography Tool](https://fluidtypography.com/) - for easily calculating fluid font sizes.
+- [Solutions to Replace the 12-Column Grid](https://moderncss.dev/solutions-to-replace-the-12-column-grid/) - a great article by Stephanie Eckless on fluid grid containers.
 - [PerfectPixel](https://www.welldonecode.com/perfectpixel/) - a Chrome extension for comparing website with design image.
 
 ## Author
